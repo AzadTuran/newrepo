@@ -1,0 +1,75 @@
+
+                STRING METHODLARI
+
+1) toUpperCase():
+                i) Tum harfleri buyuk harfe cevirir.
+                ii) Bize String return eder.
+
+2) toLowerCase():
+                i) Tum harfleri kucuk harfe cevirir.
+                ii) Bize String return eder.
+
+3)charAt(0) :
+                i) bize Data'daki ilk karakteri döndürür.
+                ii) index ile çalışır.
+                iii) char return eder.
+
+4)lenght() :
+                i) bir datadaki karakter sayisini bize verir.
+                ii) int bir deger dondurur.
+
+5) substring() :  Iki kullanimi vardir;
+
+                 i)baslangic ve bitis indexi verilirse
+                  baslangic indexi dahil bitis indexi haric yazilir
+                  substring(baslangicIndexiDahil,bitisIndexiHaric);
+                 ii)String'in verilen indexten sonuna kadar
+                  alinmasini saglar
+                  substring(baslangicIndexi);
+                  Bu method bize String döndürür.
+
+6) contains() :
+                 i)Bir data var mi ? yok mu? diye bakar.
+                 ii)Bize boolean bir deger döndürür.
+
+7)substring() : iki kullanimi vardir.
+                i) substring(baslangic indexi, bitis indexi) String'in ortasindan
+                bir parca almaya yarar
+                ii)substring(baslangic indexi) String'in verilen index'ten sonuna
+                kadar almaya yarar.
+                Sonuc ise String dir.
+8) startsWith():
+                Metnin bas kisminin istenilen dizi(1 veya
+                daha fazla karakter) ile eslesip eslesmedigini
+                kontrol eder.Sonucu boolean dir
+
+9) replace("#target" , "#replacement"); -> verilen stringde #target stringi olan her değeri
+                                           #replacement stringi ile değiştirir.
+
+10)replaceAll("#regex" , "#replacement"); -> string içerisinde #regex olan ifadelerin hepsini
+                                             #replacement ile değiştirir.
+
+    * Regex :
+
+            1) "[0-9]" -> Tüm rakamlar
+            2) "[a-z]" -> Tüm küçük harfler
+            3) "[A-Z]" -> Tüm büyük harfler
+            4) "[a-zA-Z]" -> Tüm küçük ve büyük harfler
+            5) "[a-zA-Z0-9]" -> Tüm harfler ve tüm rakamlar
+            6) "[aeiouAEIOU]" -> Tüm sesli harfler
+            7)"[^0-9]" -> Rakamlar dışında her şey
+            8) "[^a-zA-Z0-9]" -> Tüm rakamlar ve tüm harfler dışında kalan her şey
+            9) "[\\p{Punct}]" -> Tüm noktalama işaretleri
+
+11)split("#string"); -> stringi #string karakterini baz alarak böler. Bölünen kısımlar
+                       indexleri ile çağırılır.
+
+                       String s = "Bahadır Ahmet Ulaş";
+                       s.split(" ");
+
+                       ["Bahadır"] -> 0.index
+                       ["Ahmet"] -> 1.index
+                       ["Ulaş"] -> 3.index
+
+12)trim(); -> stringin başında ve sonunda boşluk varsa o boşlukları siler.
+
